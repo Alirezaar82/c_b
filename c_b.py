@@ -42,7 +42,7 @@ def __naming__(name: str, object_):
     try : 
         bpy.data.objects[name]
         is_used = True
-    except :
+    except KeyError:
         is_used = False
     finally :
         if is_used :
